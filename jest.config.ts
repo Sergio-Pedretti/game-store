@@ -5,4 +5,7 @@ module.exports = {
   coverageDirectory: 'coverage',
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
+  transform: {
+    '^.+\\.(t|j)sx?$': '@swc/jest',
+  },
 }
