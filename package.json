@@ -8,13 +8,13 @@
     "start": "next start",
     "lint": "eslint src --max-warnings=0",
     "prepare": "husky install",
-    "test": "jest",
+    "test": "jest --findRelatedTests --bail",
     "test:watch": "npm test --watch"
   },
   "lint-staged": {
     "src/**/*": [
       "npm run lint --fix",
-      "npm test --findRelatedTests --bail"
+      "npm test"
     ]
   },
   "dependencies": {
