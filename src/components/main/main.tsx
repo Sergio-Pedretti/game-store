@@ -1,7 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
 
-export const Main = () => (
+type Props = {
+  title?: string
+  subTitle?: string
+}
+
+export const Main = ({
+  title = 'React Avançado',
+  subTitle = 'NextJS, ReactJS, Typescript, Tailwind e TDD',
+}: Props) => (
   <main
     data-testid="container"
     className="container h-screen flex flex-col justify-center items-center bg-zinc-400"
@@ -23,10 +31,8 @@ export const Main = () => (
         height={206}
       />
     </figure>
-    <h1 className="text-lg font-bold text-gray-900 pt-5">React Avançado</h1>
-    <h1 className="text-lg font-bold text-gray-900 pt-5">
-      NextJS, ReactJS, Typescript, Tailwind e TDD
-    </h1>
+    <h1 className="text-lg font-bold text-gray-900 pt-5">{title}</h1>
+    <h1 className="text-lg font-bold text-gray-900 pt-5">{subTitle}</h1>
     <Image
       className="pt-5"
       src="hero-illustration.svg"
