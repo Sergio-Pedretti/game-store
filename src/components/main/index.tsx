@@ -4,7 +4,7 @@ import Image from 'next/image'
 export const Main = () => (
   <main
     data-testid="container"
-    className="container h-screen flex flex-col justify-center items-center"
+    className="container h-screen flex flex-col justify-center items-center bg-zinc-400"
   >
     <figure className="flex flex-row">
       <Image
