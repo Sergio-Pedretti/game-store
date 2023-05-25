@@ -10,5 +10,10 @@
       "version": "detect"
     }
   },
-  "extends": ["next/core-web-vitals", "plugin:prettier/recommended", "eslint:recommended"]
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
+    "eslint:recommended",
+    "plugin:storybook/recommended"
+  ]
 }
