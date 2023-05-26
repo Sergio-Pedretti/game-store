@@ -11,8 +11,23 @@ module.exports = (plop) => {
     actions: [
       {
         type: 'add',
-        path: 'src/components/{{kebabCase name}}/index.tsx',
-        templateFile: 'generators/templates/index.tsx.hbs',
+        path: 'src/components/{{kebabCase name}}/{{kebabCase name}}.tsx',
+        templateFile: 'generators/templates/component.tsx.hbs',
+      },
+      {
+        type: 'add',
+        path: 'src/components/{{kebabCase name}}/{{kebabCase name}}.stories.tsx',
+        templateFile: 'generators/templates/stories.tsx.hbs',
+      },
+      {
+        type: 'add',
+        path: 'src/components/{{kebabCase name}}/index.ts',
+        templateFile: 'generators/templates/index.ts.hbs',
+      },
+      {
+        type: 'add',
+        path: 'src/components/{{kebabCase name}}/{{kebabCase name}}.spec.tsx',
+        templateFile: 'generators/templates/testing.tsx.hbs',
       },
     ],
   })
