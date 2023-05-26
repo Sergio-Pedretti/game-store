@@ -13,6 +13,5 @@ export const Default: Story = {
     title: 'React',
     subTitle: 'Next',
   },
-  name: 'Default Main',
   render: (args) => <Main {...args} />,
 }
